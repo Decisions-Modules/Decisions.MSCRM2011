@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0" DefaultTargets="build_all">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Decisions.MSCRM2011</RootNamespace>
+		<AssemblyName>Decisions.MSCRM2011</AssemblyName>
+		<ReferencePath>..\..\..\lib</ReferencePath>
+		<OutputPath>bin\Debug</OutputPath>
+		<WebReferencePath>Web References\</WebReferencePath>
+		<BuildDest>..\..\..\output\binservices</BuildDest>		
+		<LibPath>..\..\..\lib</LibPath>
+		<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+		<SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+    <CreateModule>..\..\..\output\binutils\CreateModule.exe</CreateModule>
+	</PropertyGroup>
+
+	<Target Name="build_all">		
+		<CallTarget Targets="clean"/>
+		<MakeDir Directories="$(BuildDest)" />
+		<CallTarget Targets="Build"/>		
+	</Target>
+
+	<ItemGroup>
+		<Compile Include="**\*.cs" Exclude="obj/**.*"/>		
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="$(LibPath)\decisions\DecisionsFramework.dll"/>
+		<Reference Include="$(LibPath)\MSCRM\MSCRM2011\Microsoft.Crm.Sdk.Proxy.dll"/>
+		<Reference Include="$(LibPath)\MSCRM\MSCRM2011\Microsoft.IdentityModel.dll"/>
+		<Reference Include="$(LibPath)\MSCRM\MSCRM2011\Microsoft.Xrm.Client.dll"/>
+		<Reference Include="$(LibPath)\MSCRM\MSCRM2011\Microsoft.Xrm.Sdk.Deployment.dll"/>
+		<Reference Include="$(LibPath)\MSCRM\MSCRM2011\Microsoft.Xrm.Sdk.dll"/>
+		<Reference Include="$(LibPath)\IdentityModel\IdentityModel.dll"/>
+		<Reference Include="$(LibPath)\IdentityModel\System.ValueTuple.dll"/>
+  </ItemGroup>
+
+	<Target Name="clean">
+		<RemoveDir Directories=".\obj\" ContinueOnError="true"/>
+		<Delete Files="$(BuildDest)\$(AssemblyName).dll" ContinueOnError="true"/>
+   </Target>
+   
+	<Import Project="$(LibPath)\msbuild\decisions.net.targets" />  
+	
+	<Target Name="AfterBuild">
+		<Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(BuildDest)" />
+		<Copy SourceFiles="$(OutputPath)\$(AssemblyName).pdb" DestinationFolder="$(BuildDest)" />			
+	</Target>
+</Project>

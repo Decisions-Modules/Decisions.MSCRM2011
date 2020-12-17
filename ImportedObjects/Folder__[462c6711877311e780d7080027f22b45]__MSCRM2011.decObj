@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ExportDescription xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>MSCRM 2011</Name>
+  <ParentFolderId>40f1522a-a028-47b9-a1d5-6e58c0a1ee35</ParentFolderId>
+  <ParentFolderPath>System/Designers/Catalog/System Defaults</ParentFolderPath>
+  <TypeName>DecisionsFramework.ServiceLayer.Services.Folder.Folder</TypeName>
+  <ShortTypeName>Designer Folder</ShortTypeName>
+  <Id>462c6711-8773-11e7-80d7-080027f22b45</Id>
+  <ExportedBy>admin@decisions.com</ExportedBy>
+  <ExportedOn>2017-08-22T16:19:02.8237638-04:00</ExportedOn>
+  <PlatformVersion>4.0.4.37622</PlatformVersion>
+  <DependsOn />
+  <DependsOnAssemblies />
+  <StructureImport>false</StructureImport>
+  <DependsOnStructures>false</DependsOnStructures>
+  <Size>673</Size>
+  <Data>SnNvblN0b3JhZ2VQSwMEFAAAAAgAYYIWS7tpX8geAgAA8wMAAAsAAABKc29uU3RvcmFnZX1Sba+aMBT+K4TPoAXkRROT+YKLm4pR4rJPS4WDdhfbm7ZozI3/fQUq291u1gSa85znPOc8bd9MZI7ezEP9+5Em22T6JZ6l5ghZKvy+jTeTdWyOzDlkRBBGxYLjC9wYf+ntgV9JBit8B/4MRG/BylzF7WYZ/9ZZxgF4DY0HPdRTn2XMqlJWHMYUKslxaRnb6liS7CvcU/YCdEyrsjQts2g0l3M1ziBwsyB0HDsKQ892HAjtCOWhjSKE3LBw3ePA7yqmcMZXwnh6f4WPrcxBkBPVG/AtZz8hk60HJSPO7LakKYe6XNZAdVwDrZ7CjWiBlQuVyzCdwo4xqdCim6HuvVHtGmrbxej0W0rC62ik7sMyCT0DJ3IL/EJEM6zuTEFIQk8ruEKpoMakOp0tlmcV7u9CwqX/7CD6MyxxyU79NmHoKUV/vZ/t1oaLHKduJtq0nkdbhKxSE9xbcJkreLFKvhnryWbyOV7Hm9RYJKt5vGsF3rG18zMW++rYQuKJkTwHqgOcXwglQt25ZPxA4JbQ8q5zQOXv7s2Vo8LxXRfbGLmRPQiPQxs7uW8H4EcZwg6A53d1+qjf2cw4YAl5QudqU8nAC7whcrwo8oIBqpciXVhOCgL5X5xhMPQ9T3O00LQetbHwKX8+qV7GLn+o/IeCeXYmV8ifR6FD3df3XfWyhy7qVs0pyxSfhKJgRVHAHEqQnYSOEvpx/cMy61tEj8cvUEsBAjMAFAAAAAgAYYIWS7tpX8geAgAA8wMAAAsAAAAAAAAAAAAAAAAAAAAAAEpzb25TdG9yYWdlUEsFBgAAAAABAAEAOQAAAEcCAAAAAA==</Data>
+  <RequiresApproval>false</RequiresApproval>
+  <OverridingImport>false</OverridingImport>
+  <ModuleName>Decisions.MSCRM2011</ModuleName>
+  <ImportOrder>105</ImportOrder>
+  <ModifiedOn>2017-08-22T15:52:49.533</ModifiedOn>
+  <BehaviorTypeName>DecisionsFramework.Design.DesignerProjectFolder</BehaviorTypeName>
+</ExportDescription>
